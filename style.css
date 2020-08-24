@@ -1,0 +1,306 @@
+.body {
+    height: 100vh;
+}
+
+.menubar {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    background-color: whitesmoke;
+    top: 0;
+    margin: 0px;
+}
+
+.easybacklogo {
+    margin-left: 10%;
+    flex-shrink: 0;
+    align-self: center;
+}
+
+.about_flex_-container {
+    align-self: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    width: 70%;
+    font-size: 1.2rem;
+    flex-shrink: 2;
+}
+
+.text-container {
+    display: inline-flex;
+    height: 750px;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+
+.text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 15%;
+    margin-left: 10%;
+    margin-bottom: auto;
+    width: 20%;
+}
+
+
+.desktop1 {
+    display: block;
+    position: absolute;
+    width: 60%;
+    top: 0;
+    right: 0;
+    z-index: -10;
+
+}
+
+.phone {
+    display: block;
+    margin-top: 2%;
+    position: absolute;
+    width: 40%;
+    top: 0;
+    right: 0;
+    z-index: 0;
+}
+
+.nav__ul {
+    font-family: "Times New Roman", Times, serif;
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+    color: #9698A6;
+    text-decoration: none;
+}
+
+.Request {
+    background-color: hsl(136, 40%, 65%);
+    border-radius: 50px;
+    border: 3px solid #73AD21;
+    padding: 10px;
+    color: whitesmoke;
+    margin: auto;
+    max-width: 98px;
+
+}
+
+.req {
+    margin-left: 0;
+}
+
+
+.feature_choose_flex_container {
+    background-color: #F3F4F6;
+    height: auto;
+    padding-bottom: 6rem;
+}
+
+.Why_choose_Easybank {
+    padding-top: 4%;
+    margin-left: 10%;
+    max-width: 500px;
+    padding-bottom: 2%;
+}
+
+
+
+.logo_container {
+    margin-left: 10%;
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    flex-wrap: wrap;
+}
+
+.a1 {
+    width: 350px;
+    padding-right: 1rem;
+}
+
+.d {
+    width: 350px;
+}
+
+
+.Articles {
+    background-color: white;
+    height: auto;
+    margin-left: 10%;
+    margin-bottom: 55px;
+}
+
+.latest {
+    padding-top: 3%;
+}
+
+.image_flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+
+.small_font {
+    font-size: 1rem;
+    color: #9698A6;
+    width: 230px;
+}
+
+.img_1 {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+}
+
+.media {
+    background-color: #2D314D;
+    min-height: 14rem;
+    color: white;
+    display: flex;
+    /* margin-top: 12rem; */
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.social_media {
+    margin-left: 10%;
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    width: 170px;
+    height: 150px;
+    flex-shrink: 2;
+}
+
+.img_media {
+    margin-top: auto;
+}
+
+.list1 {
+    display: flex;
+    flex-direction: column;
+    font-size: 1rem;
+    padding: 2.5rem;
+    margin-left: 200px;
+    list-style: none;
+    justify-content: space-between;
+}
+
+.invite {
+    display: flex;
+    flex-direction: column;
+    width: 260px;
+    height: 200px;
+    justify-content: space-between;
+    margin-right: 200px;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+    .nav__ul {
+        display: none;
+    }
+
+    .Request {
+        display: none;
+    }
+
+    .easybacklogo {
+        margin-left: 30%;
+    }
+
+    .text-container {
+
+        margin-top: auto;
+        margin-left: auto;
+        flex-direction: row-reverse;
+        height: 350px;
+        margin-top: 25%;
+        width: 100%;
+    }
+
+    .media {
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .logo_container {
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: nowrap;
+    }
+
+    .social_media {
+        width: 100%;
+        align-items: center;
+        height: auto;
+    }
+
+    .img_media {
+        margin-left: auto;
+        margin-right: auto;
+        margin: 0;
+    }
+
+    .list1 {
+
+        width: 100%;
+        align-items: center;
+        height: auto;
+        margin: 0;
+        padding: .5rem;
+    }
+
+
+    .invite {
+        width: 100%;
+        margin: 00px;
+        height: 100px;
+        align-items: center;
+    }
+
+    .Request_end {
+        align-items: flex-start;
+        height: auto;
+        display: flex;
+        margin: 0;
+    }
+
+    .image_flex {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+
+    }
+
+    .img_1 {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .text {
+        width: auto;
+    }
+
+    .logo_container {
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        width: 70%;
+    }
+
+    .center {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+}
