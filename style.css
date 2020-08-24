@@ -267,7 +267,7 @@
     }
 
     .Request_end {
-        align-items: flex-start;
+        align-items: center;
         height: auto;
         display: flex;
         margin: 0;
