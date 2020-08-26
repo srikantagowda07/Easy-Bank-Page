@@ -1,71 +1,28 @@
-.body {
-    height: 100vh;
+body {
+    width: 100%;
 }
 
-.menubar {
+header {
     position: absolute;
     width: 100%;
     display: flex;
-    flex-direction: row;
-    flex: 1;
-    background-color: whitesmoke;
+    background-color: white;
+    align-items: center;
+    z-index: 1;
     top: 0;
-    margin: 0px;
+    left: 0;
 }
 
-.easybacklogo {
+.easyback_logo {
     margin-left: 10%;
-    flex-shrink: 0;
-    align-self: center;
 }
 
-.about_flex_-container {
-    align-self: center;
+.navigation_bar {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-evenly;
     width: 70%;
     font-size: 1.2rem;
-    flex-shrink: 2;
-}
-
-.text-container {
-    display: inline-flex;
-    height: 750px;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-
-.text {
-    display: flex;
-    flex-direction: column;
-    margin-top: 15%;
-    margin-left: 10%;
-    margin-bottom: auto;
-    width: 20%;
-}
-
-
-.desktop1 {
-    display: block;
-    position: absolute;
-    width: 60%;
-    top: 0;
-    right: 0;
-    z-index: -10;
-
-}
-
-.phone {
-    display: block;
-    margin-top: 2%;
-    position: absolute;
-    width: 40%;
-    top: 0;
-    right: 0;
-    z-index: 0;
 }
 
 .nav__ul {
@@ -74,29 +31,55 @@
     width: 75%;
     justify-content: space-evenly;
     color: #9698A6;
-    text-decoration: none;
 }
 
-.Request {
+button {
+    padding: 6px;
+    width: 105px;
     background-color: hsl(136, 40%, 65%);
-    border-radius: 50px;
+    border-radius: 10px;
     border: 3px solid #73AD21;
-    padding: 10px;
     color: whitesmoke;
-    margin: auto;
-    max-width: 98px;
-
 }
 
-.req {
-    margin-left: 0;
+button:hover {
+    transform: scaleY(1.5);
+}
+/* END OF HEADER CODE */
+.image_text-container {
+    display: flex;
+    flex-direction: row;
+    height: 700px
 }
 
+.Information_txt {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-top: 15%;
+    margin-left: 10%;
+    width: 20%;
+}
 
-.feature_choose_flex_container {
+.desktop_back_Images {
+    display: block;
+    position: absolute;
+    width: 60%;
+    top: 10%;
+    right: 0;
+    z-index: -10;
+}
+
+.phone_Images {
+    margin-top: 2%;
+    width: 40%;
+    top: 0;
+    z-index: 0;
+}
+
+/* END OF IMAGE & TXT CODE */
+
+.feature_container {
     background-color: #F3F4F6;
-    height: auto;
-    padding-bottom: 6rem;
 }
 
 .Why_choose_Easybank {
@@ -107,42 +90,38 @@
 }
 
 
+.text_align{
+    margin-left: 10%;
+}
 
-.logo_container {
+
+.feature_logo_container {
     margin-left: 10%;
     display: flex;
-    flex-direction: row;
     width: 80%;
     flex-wrap: wrap;
 }
 
-.a1 {
+.feature {
     width: 350px;
     padding-right: 1rem;
 }
 
-.d {
-    width: 350px;
-}
+/* // .feature :end */
 
-
-.Articles {
+.Articles_block {
     background-color: white;
-    height: auto;
-    margin-left: 10%;
     margin-bottom: 55px;
-}
-
-.latest {
     padding-top: 3%;
 }
 
-.image_flex {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
 
+.image_flex {
+    margin-left: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-shrink: 1;
+}
 
 .small_font {
     font-size: 1rem;
@@ -150,18 +129,20 @@
     width: 230px;
 }
 
-.img_1 {
+.Articles_block_image {
     display: flex;
     flex-direction: column;
-    width: 350px;
+    min-width: 350px;
 }
 
-.media {
+/* END OF ARTICAL BLOCK */
+
+
+.footer {
     background-color: #2D314D;
     min-height: 14rem;
     color: white;
     display: flex;
-    /* margin-top: 12rem; */
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -176,16 +157,17 @@
     flex-shrink: 2;
 }
 
-.img_media {
+.social_media_icon {
     margin-top: auto;
 }
 
-.list1 {
+.contact_info {
     display: flex;
     flex-direction: column;
     font-size: 1rem;
     padding: 2.5rem;
     margin-left: 200px;
+    width: 80px;
     list-style: none;
     justify-content: space-between;
 }
@@ -194,70 +176,61 @@
     display: flex;
     flex-direction: column;
     width: 260px;
-    height: 200px;
-    justify-content: space-between;
+    height: 150px;
+    margin-top: auto;
     margin-right: 200px;
 }
 
-
-
+.phone_back_Images {
+    display: none;
+}
 
 @media only screen and (max-width: 500px) {
-    .nav__ul {
-        display: none;
-    }
-
+    .nav__ul,
     .Request {
         display: none;
     }
 
-    .easybacklogo {
+    .easyback_logo {
         margin-left: 30%;
     }
 
-    .text-container {
+    .image_text-container {
+        height: auto;
+        margin-top: 100%;
+    }
 
-        margin-top: auto;
+
+    .Information_txt {
+        width: auto;
         margin-left: auto;
-        flex-direction: row-reverse;
-        height: 350px;
-        margin-top: 25%;
-        width: 100%;
     }
 
-    .media {
+    .feature_logo_container {
+        flex-direction: column;
+        width: 70%;
+    }
+
+    /* footer block  */
+
+    .footer {
         flex-direction: column;
         flex-wrap: nowrap;
-
     }
 
-    .logo_container {
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: nowrap;
-    }
 
     .social_media {
-        width: 100%;
-        align-items: center;
         height: auto;
+        width: auto;
+        align-items: center;
     }
 
-    .img_media {
-        margin-left: auto;
-        margin-right: auto;
-        margin: 0;
-    }
-
-    .list1 {
-
-        width: 100%;
+    .contact_info {
+        width: auto;
         align-items: center;
-        height: auto;
         margin: 0;
         padding: .5rem;
     }
-
 
     .invite {
         width: 100%;
@@ -266,35 +239,16 @@
         align-items: center;
     }
 
-    .Request_end {
-        align-items: center;
-        height: auto;
-        display: flex;
-        margin: 0;
+    .Articles_block {
+        margin-left: 0;
     }
 
     .image_flex {
-        display: flex;
-        flex-direction: column;
+        display: block;
+        /* flex-direction: column; */
         flex-wrap: nowrap;
-
-    }
-
-    .img_1 {
-        margin-left: auto;
-        margin-right: auto;
-    }
-
-    .text {
-        width: auto;
-    }
-
-    .logo_container {
-        margin-left: auto;
-        margin-right: auto;
-        display: flex;
-        flex-direction: column;
-        width: 70%;
+        width: 100px;
+        flex-shrink: 0;
     }
 
     .center {
@@ -302,5 +256,27 @@
         margin-left: auto;
         margin-right: auto;
         text-align: center;
+
+    }
+
+    .desktop_back_Images {
+        display: none;
+    }
+
+    .phone_back_Images {
+        display: block;
+        top: 0;
+        right: 0%;
+        position: absolute;
+        width: 100%;
+        z-index: -10;
+    }
+
+    .phone_Images {
+        display: block;
+        top: 0;
+        left: 0%;
+        z-index: -10;
+        width: 100%;
     }
 }
