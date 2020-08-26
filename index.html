@@ -26,88 +26,81 @@
 
 </head>
 
-<body class="body">
-  <div class="menubar">
-    <div class="easybacklogo"> <img src="images/logo.svg" alt="easy back logo" width="150" height="45"> </div>
-    <div class="about_flex_-container">
+<body>
+  <!-- FISRT BLOCK HEADER contains(LOGO, NAVIGATION_BAR, Request_Button-->
+  <header>
+    <div class="easyback_logo"> <img src="images/logo.svg" alt="easy back logo"> </div>
+    <div class="navigation_bar">
       <ul class="nav__ul">
-        <div class="nav__li">Home</a></div>
-        <div class="nav__li">About</a></div>
-        <div class="nav__li">Contact</a></div>
-        <div class="nav__li">Blog</a></div>
-        <div class="nav__li">Careers</a></div>
+        <div class="nav__li">Home</div>
+        <div class="nav__li">About</div>
+        <div class="nav__li">Contact</div>
+        <div class="nav__li">Blog</div>
+        <div class="nav__li">Careers</div>
       </ul>
     </div>
-    <div class="Request">Request Invite</div>
-  </div>
-
-  <!-- FISRT BLOCK HEADER DONE -->
-
+    <button class="Request">Request Invite</button>
+  </header>
+  <!--                         HEADER      END -->
 
 
-  <div class="text-container">
-    <div class="text">
-      <h1>Next generation digital banking</h1>
+  <!-- FISRT text-container and image block contains(Information_txt, Background_Image) -->
+  <div class="image_text-container">
+    <div class="Information_txt">
+      <h1 class="center">Next generation digital banking</h1>
       <p>
         Take your financial life online. Your Easybank account will be a
         one-stop-shop for spending, saving, budgeting, investing, and much
         more.
       </p>
+      <button class="center">Request Invite</button>
       <br>
-      <div class="Request req">Request Invite</div>
     </div>
     <div class="Background_desktop_container">
-      <img src="images/bg-intro-desktop.svg" alt="desktop back Images" class="desktop1">
-      <img src="images/image-mockups.png" alt="phone Images" class="phone">
+      <img src="images/bg-intro-desktop.svg" alt="desktop_back_Images" class="desktop_back_Images">
+      <img src="images/bg-intro-mobile.svg" alt="mobile back Images" class="phone_back_Images">
+      <img src="images/image-mockups.png" alt="phone_Images" class=" desktop_back_Images phone_Images">
     </div>
   </div>
-  <!-- FISRT text-container and image block DONE -->
-
-  <div class="feature_choose_flex_container">
+  <!--                          END -->
+  <div class="feature_container">
     <div class="Why_choose_Easybank">
       <h1>Why choose Easybank?</h1>
       <p>We leverage Open Banking to turn your bank into your finacial hub. Control your finaces like never before.</p>
     </div>
-
-
-    <div class="logo_container">
+    <div class="feature_logo_container">
       <br>
-      <div class="a1">
+      <div class="feature">
         <img src="images/icon-online.svg" alt="desktop back" width="72px" height="72px" class="center">
         <h4 class="center">Online Banking</h4>
         <p>Our modern web and mobile applications allow you to keep track of your finaces wherever you are in the world.
         </p>
       </div>
-
-      <div class="a1 b">
+      <div class="feature">
         <img src="images/icon-budgeting.svg" alt="desktop back" width="72px" height="72px" class="center">
         <h4 class="center">Simple Budgeting</h4>
         <p>See exactly where your money goes each month. Receive notifications when you're close to hitting your limits.
         </p>
       </div>
-
-      <div class="a1 c">
+      <div class="feature">
         <img src="images/icon-onboarding.svg" alt="desktop back" width="72px" height="72px" class="center">
         <h4 class="center">Fast Onboarding</h4>
         <p>We don't do branches. Open your account in minutes online and start taking your control of your finances
           right away.</p>
       </div>
-
-      <div class="d">
+      <div class="feature">
         <img src="images/icon-api.svg" alt="desktop back" width="72px" height="72px" class="center">
         <h4 class="center">Open API</h4>
         <p>Manage your savings, investments, pension and much more from one account. Tracking your money has been never
           easier.</p>
       </div>
-
     </div>
   </div>
 
-
-  <div class="Articles">
-    <h1 class="latest center">Latest Articles</h1>
+  <div class="Articles_block">
+    <h1 class="center text_align">Latest Articles</h1>
     <div class="image_flex">
-      <div class="img_1">
+      <div class="Articles_block_image">
         <img src="images/image-currency.jpg" alt=" money" width="270" height="133" class="center">
         <p class="small_font center"> By Claire Robinson </p>
         <h3 class="small_font center "> Receive money in any currency with no fees </h3>
@@ -115,7 +108,7 @@
           forced
           to only receive money in a single...</p>
       </div>
-      <div class="img_1 img_2">
+      <div class="Articles_block_image ">
         <img src="images/image-restaurant.jpg" alt=" image-restaurant" width="270" height="133" class="center">
         <p class="small_font center"> By Wilson Hutton </p>
         <h3 class="small_font center"> Treat yourself without worrying about money </h3>
@@ -123,7 +116,7 @@
           realistic
           limits each month. That means you...</p>
       </div>
-      <div class=" img_1 img_3">
+      <div class=" Articles_block_image ">
         <img src="images/image-plane.jpg" alt=" image-plane" width="270" height="133" class="center">
         <p class="small_font center"> By Wilson Hutton </p>
         <h3 class="small_font center"> Take your Easybank card wherever you go </h3>
@@ -131,7 +124,7 @@
           purchases while
           you’re abroad. We’ll even show you.....</p>
       </div>
-      <div class="img_1 img_4">
+      <div class="Articles_block_image">
         <img src="images/image-confetti.jpg" alt=" image-plane" width="270" height="133" class="center">
         <p class="small_font center"> By Claire Robinson </p>
         <h3 class="small_font center">Our invite-only Beta accounts are now live! </h3>
@@ -142,11 +135,10 @@
     </div>
   </div>
 
-
-  <div class="media">
+  <div class="footer">
     <div class="social_media">
-      <img src="images/logo2.svg" alt="easy back logo" width="150" height="45">
-      <div class="img_media">
+      <img src="images/logo2.svg" alt="easy back logo">
+      <div class="social_media_icon">
         <img src="images/icon-facebook.svg" alt="easy back logo" width="20" height="20">
         <img src="images/icon-instagram.svg" alt="easy back logo" width="20" height="20">
         <img src="images/icon-youtube.svg" alt="easy back logo" width="20" border: 2px solid red; height="20">
@@ -154,20 +146,18 @@
         <img src="images/icon-pinterest.svg" alt="easy back logo" width="20" height="20">
       </div>
     </div>
-
-    <ul class="list1">
+    <ul class="contact_info">
       <li>About Us</li>
       <li>Contact</li>
       <li>Blog</li>
     </ul>
-    <ul class="list1 list2">
+    <ul class="contact_info">
       <li>Careers</li>
       <li>Support</li>
       <li>Privacy Policy</li>
     </ul>
-
     <div class="invite">
-      <div class="Request Request_end">Request Invite</div>
+      <button>Request Invite</button>
       <p>© Easybank. All Rights Reserved</p>
     </div>
   </div>
